@@ -4,6 +4,8 @@ Figma-to-Code Responsive Component Library
 
 A portfolio study exploring how a Figma UI system can be translated into reusable, responsive and developer-ready web components.
 
+**Live demo:** [https://acelyalejeune.com/ui-system/](https://acelyalejeune.com/ui-system/)
+
 ## Purpose
 
 The project demonstrates design-system thinking across foundations, component anatomy, semantic states, responsive behavior, accessibility and developer handoff. It is an independent portfolio study and does not contain employer or proprietary product material.
