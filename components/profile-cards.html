@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Team profile cards and expandable directory items.">
+  <title>Profile Cards - UI System Foundations</title>
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../assets/vendor/fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="../assets/css/tailwind.css">
+</head>
+<body>
+  <a class="sr-only-focusable" href="#main">Skip to content</a>
+  <header class="site-header"><div class="site-header__inner"><a class="brand-link" href="../index.html"><span class="brand-mark">UI</span><span>System Foundations</span></a><a class="header-link" href="../index.html"><i class="fa-solid fa-arrow-left"></i> Gallery</a></div></header>
+  <main id="main" class="page-shell">
+    <div class="page-hero"><p class="eyebrow">UI Pattern</p><h1 class="page-title">Profile Cards</h1><p class="page-lede">Reusable profile cards for team members, roles, availability and expandable directory views.</p></div>
+    <section class="doc-section" aria-labelledby="team-member-cards">
+      <div class="section-heading"><p class="section-kicker">Profile cards</p><h2 id="team-member-cards" class="section-title">Team member cards</h2><p class="section-copy">Profile summaries combine status, key details and contextual actions in a consistent card layout.</p></div>
+      <div class="demo-panel grid gap-5 md:grid-cols-2 xl:grid-cols-3">
+        <article class="flex min-h-[28rem] flex-col overflow-hidden rounded-[8px] border border-border bg-white">
+          <div class="flex items-start gap-3 p-5"><span class="grid size-11 shrink-0 place-items-center rounded-full bg-[#dcd6f7] text-sm font-semibold text-primary">AM</span><div class="min-w-0 flex-1"><h3 class="font-semibold">Alex Morgan</h3><p class="text-sm text-muted">Product Designer</p></div><span class="chip chip-success"><span class="chip-dot bg-[#3c552d]"></span>Available</span></div>
+          <div class="mx-5 rounded-[8px] border border-border bg-surface p-4"><p class="text-[10px] font-semibold uppercase text-muted">Availability</p><div class="mt-1 flex items-center justify-between gap-3 text-sm"><span>60% capacity</span><a class="font-semibold text-primary" href="#">View schedule</a></div></div>
+          <dl class="grid gap-4 p-5 text-sm"><div><dt class="text-[10px] font-semibold uppercase text-muted">Team</dt><dd>Product Design</dd></div><div><dt class="text-[10px] font-semibold uppercase text-muted">Location</dt><dd>London, UK</dd></div><div><dt class="text-[10px] font-semibold uppercase text-muted">Projects</dt><dd>3 active</dd></div></dl>
+          <a class="mt-auto border-y border-border bg-[#f1f5f9] px-5 py-3 text-sm font-semibold text-primary" href="#">View profile</a><div class="grid grid-cols-2 gap-3 bg-surface p-4"><button class="btn btn-secondary">Message</button><button class="btn btn-danger-outline">Remove</button></div>
+        </article>
+        <article class="flex min-h-[28rem] flex-col overflow-hidden rounded-[8px] border border-border bg-white">
+          <div class="flex items-start gap-3 p-5"><span class="grid size-11 shrink-0 place-items-center rounded-full bg-[#e9e6fa] text-sm font-semibold text-primary">JC</span><div class="min-w-0 flex-1"><h3 class="font-semibold">Jamie Chen</h3><p class="text-sm text-muted">Frontend Developer</p></div><span class="chip chip-warning"><span class="chip-dot bg-[#d7b26d]"></span>Remote</span></div>
+          <div class="mx-5 rounded-[8px] border border-border bg-surface p-4"><p class="text-[10px] font-semibold uppercase text-muted">Availability</p><div class="mt-1 flex items-center justify-between gap-3 text-sm"><span>40% capacity</span><a class="font-semibold text-primary" href="#">View schedule</a></div></div>
+          <dl class="grid gap-4 p-5 text-sm"><div><dt class="text-[10px] font-semibold uppercase text-muted">Team</dt><dd>Engineering</dd></div><div><dt class="text-[10px] font-semibold uppercase text-muted">Location</dt><dd>Remote - Belgium</dd></div><div><dt class="text-[10px] font-semibold uppercase text-muted">Projects</dt><dd>2 active</dd></div></dl>
+          <a class="mt-auto border-y border-border bg-[#f1f5f9] px-5 py-3 text-sm font-semibold text-primary" href="#">View profile</a><div class="grid grid-cols-2 gap-3 bg-surface p-4"><button class="btn btn-secondary">Message</button><button class="btn btn-danger-outline">Remove</button></div>
+        </article>
+        <article class="flex min-h-[28rem] flex-col overflow-hidden rounded-[8px] border border-border bg-white">
+          <div class="flex items-start gap-3 p-5"><span class="grid size-11 shrink-0 place-items-center rounded-full bg-[#dcd6f7] text-sm font-semibold text-primary">SR</span><div class="min-w-0 flex-1"><h3 class="font-semibold">Sam Rivera</h3><p class="text-sm text-muted">UX Researcher</p></div><span class="chip chip-primary"><span class="chip-dot bg-primary"></span>Contractor</span></div>
+          <div class="mx-5 rounded-[8px] border border-border bg-surface p-4"><p class="text-[10px] font-semibold uppercase text-muted">Availability</p><div class="mt-1 flex items-center justify-between gap-3 text-sm"><span>30% capacity</span><a class="font-semibold text-primary" href="#">View schedule</a></div></div>
+          <dl class="grid gap-4 p-5 text-sm"><div><dt class="text-[10px] font-semibold uppercase text-muted">Team</dt><dd>Research</dd></div><div><dt class="text-[10px] font-semibold uppercase text-muted">Location</dt><dd>Barcelona, Spain</dd></div><div><dt class="text-[10px] font-semibold uppercase text-muted">Projects</dt><dd>1 active</dd></div></dl>
+          <a class="mt-auto border-y border-border bg-[#f1f5f9] px-5 py-3 text-sm font-semibold text-primary" href="#">View profile</a><div class="grid grid-cols-2 gap-3 bg-surface p-4"><button class="btn btn-secondary">Message</button><button class="btn btn-danger-outline">Remove</button></div>
+        </article>
+      </div>
+    </section>
+    <section class="doc-section" aria-labelledby="expandable-profile">
+      <div class="section-heading"><p class="section-kicker">Expandable</p><h2 id="expandable-profile" class="section-title">Expandable profile item</h2><p class="section-copy">A compact profile row that expands to reveal availability, team details and contextual actions.</p></div>
+      <div class="demo-panel"><details class="group max-w-sm overflow-hidden rounded-[8px] border border-border bg-white"><summary class="flex min-h-16 list-none items-center gap-3 p-3"><span class="grid size-10 shrink-0 place-items-center rounded-full bg-[#dcd6f7] text-sm font-semibold text-primary">AM</span><span class="min-w-0 flex-1"><strong class="block text-sm">Alex Morgan</strong><span class="block truncate text-xs text-muted">Product Designer - Available</span></span><i class="fa-solid fa-angle-down text-primary transition-transform group-open:rotate-180"></i></summary><div class="border-t border-border"><div class="m-4 rounded-[8px] border border-border bg-surface p-4"><p class="text-[10px] font-semibold uppercase text-muted">Availability</p><div class="mt-1 flex justify-between gap-3 text-sm"><span>60% capacity<br><span class="text-xs text-muted">Available this week</span></span><a class="font-semibold text-primary" href="#">View schedule</a></div></div><dl class="grid gap-4 px-4 pb-4 text-sm"><div><dt class="text-[10px] font-semibold uppercase text-muted">Team</dt><dd>Product Design</dd></div><div><dt class="text-[10px] font-semibold uppercase text-muted">Location</dt><dd>London, UK</dd></div><div><dt class="text-[10px] font-semibold uppercase text-muted">Projects</dt><dd>3 active</dd></div></dl><a class="block border-y border-border bg-[#f1f5f9] px-4 py-3 text-sm font-semibold text-primary" href="#">View profile</a><div class="grid grid-cols-2 gap-3 bg-surface p-4"><button class="btn btn-secondary">Message</button><button class="btn btn-danger-outline">Remove</button></div></div></details></div>
+    </section>
+  </main>
+</body>
+</html>

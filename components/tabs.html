@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Underline, icon and segmented tab navigation.">
+  <title>Tabs - UI System Foundations</title>
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../assets/vendor/fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="../assets/css/tailwind.css">
+  <script src="../assets/js/components.js" defer></script>
+</head>
+<body>
+  <a class="sr-only-focusable" href="#main">Skip to content</a>
+  <header class="site-header"><div class="site-header__inner"><a class="brand-link" href="../index.html"><span class="brand-mark">UI</span><span>System Foundations</span></a><a class="header-link" href="../index.html"><i class="fa-solid fa-arrow-left"></i> Gallery</a></div></header>
+  <main id="main" class="page-shell">
+    <div class="page-hero"><p class="eyebrow">UI Pattern</p><h1 class="page-title">Tabs</h1><p class="page-lede">Section navigation for organizing related content within a single page or workspace view.</p></div>
+
+    <section class="doc-section" aria-labelledby="underline-tabs">
+      <div class="section-heading"><p class="section-kicker">Default</p><h2 id="underline-tabs" class="section-title">Underline tabs</h2><p class="section-copy">The active tab is highlighted with a clear underline while inactive tabs remain neutral.</p></div>
+      <div class="demo-panel p-0" data-tabs>
+        <div class="table-scroll border-b border-border"><div class="flex min-w-max" role="tablist" aria-label="Project sections">
+          <button class="min-h-12 border-b-2 border-transparent px-5 text-sm text-muted aria-selected:border-primary aria-selected:font-semibold aria-selected:text-primary" role="tab" id="tab-overview" aria-selected="false" aria-controls="panel-overview" tabindex="-1">Overview</button>
+          <button class="min-h-12 border-b-2 border-transparent px-5 text-sm text-muted aria-selected:border-primary aria-selected:font-semibold aria-selected:text-primary" role="tab" id="tab-activity" aria-selected="true" aria-controls="panel-activity">Activity</button>
+          <button class="min-h-12 border-b-2 border-transparent px-5 text-sm text-muted aria-selected:border-primary aria-selected:font-semibold aria-selected:text-primary" role="tab" id="tab-tasks" aria-selected="false" aria-controls="panel-tasks" tabindex="-1">Tasks</button>
+          <button class="min-h-12 border-b-2 border-transparent px-5 text-sm text-muted aria-selected:border-primary aria-selected:font-semibold aria-selected:text-primary" role="tab" id="tab-files" aria-selected="false" aria-controls="panel-files" tabindex="-1">Files</button>
+          <button class="min-h-12 border-b-2 border-transparent px-5 text-sm text-muted aria-selected:border-primary aria-selected:font-semibold aria-selected:text-primary" role="tab" id="tab-team" aria-selected="false" aria-controls="panel-team" tabindex="-1">Team</button>
+          <button class="min-h-12 border-b-2 border-transparent px-5 text-sm text-muted aria-selected:border-primary aria-selected:font-semibold aria-selected:text-primary" role="tab" id="tab-settings" aria-selected="false" aria-controls="panel-settings" tabindex="-1">Settings</button>
+        </div></div>
+        <div class="p-5"><div role="tabpanel" id="panel-overview" aria-labelledby="tab-overview" hidden><h3 class="font-semibold">Overview</h3><p class="mt-2 text-sm text-muted">Project summary and recent milestones appear here.</p></div><div role="tabpanel" id="panel-activity" aria-labelledby="tab-activity"><h3 class="font-semibold">Activity</h3><p class="mt-2 text-sm text-muted">Recent project activity, updates and collaboration history appear here. Team members can review changes without leaving the current workspace.</p></div><div role="tabpanel" id="panel-tasks" aria-labelledby="tab-tasks" hidden><h3 class="font-semibold">Tasks</h3><p class="mt-2 text-sm text-muted">Open and completed work appears here.</p></div><div role="tabpanel" id="panel-files" aria-labelledby="tab-files" hidden><h3 class="font-semibold">Files</h3><p class="mt-2 text-sm text-muted">Shared project files appear here.</p></div><div role="tabpanel" id="panel-team" aria-labelledby="tab-team" hidden><h3 class="font-semibold">Team</h3><p class="mt-2 text-sm text-muted">Project collaborators appear here.</p></div><div role="tabpanel" id="panel-settings" aria-labelledby="tab-settings" hidden><h3 class="font-semibold">Settings</h3><p class="mt-2 text-sm text-muted">Project configuration appears here.</p></div></div>
+      </div>
+    </section>
+
+    <section class="doc-section" aria-labelledby="icon-tabs">
+      <div class="section-heading"><p class="section-kicker">Enhanced</p><h2 id="icon-tabs" class="section-title">Icon tabs</h2><p class="section-copy">Labels combine with supporting icons and a subtle active background for stronger recognition.</p></div>
+      <div class="demo-panel p-0" data-tabs>
+        <div class="table-scroll border-b border-border"><div class="flex min-w-max gap-1 p-2" role="tablist" aria-label="Icon project sections"><button class="min-h-10 rounded-t-[8px] border-b-2 border-transparent px-4 text-sm text-muted aria-selected:border-primary aria-selected:bg-[#f1f2fb] aria-selected:text-primary" role="tab" id="icon-overview" aria-selected="false" aria-controls="icon-panel-overview" tabindex="-1"><i class="fa-regular fa-chart-bar mr-2"></i>Overview</button><button class="min-h-10 rounded-t-[8px] border-b-2 border-transparent px-4 text-sm text-muted aria-selected:border-primary aria-selected:bg-[#f1f2fb] aria-selected:text-primary" role="tab" id="icon-activity" aria-selected="true" aria-controls="icon-panel-activity"><i class="fa-solid fa-clock-rotate-left mr-2"></i>Activity</button><button class="min-h-10 rounded-t-[8px] border-b-2 border-transparent px-4 text-sm text-muted aria-selected:border-primary aria-selected:bg-[#f1f2fb] aria-selected:text-primary" role="tab" id="icon-tasks" aria-selected="false" aria-controls="icon-panel-tasks" tabindex="-1"><i class="fa-solid fa-list-check mr-2"></i>Tasks</button><button class="min-h-10 rounded-t-[8px] border-b-2 border-transparent px-4 text-sm text-muted aria-selected:border-primary aria-selected:bg-[#f1f2fb] aria-selected:text-primary" role="tab" id="icon-files" aria-selected="false" aria-controls="icon-panel-files" tabindex="-1"><i class="fa-regular fa-folder mr-2"></i>Files</button><button class="min-h-10 rounded-t-[8px] border-b-2 border-transparent px-4 text-sm text-muted aria-selected:border-primary aria-selected:bg-[#f1f2fb] aria-selected:text-primary" role="tab" id="icon-team" aria-selected="false" aria-controls="icon-panel-team" tabindex="-1"><i class="fa-solid fa-users mr-2"></i>Team</button><button class="min-h-10 rounded-t-[8px] border-b-2 border-transparent px-4 text-sm text-muted aria-selected:border-primary aria-selected:bg-[#f1f2fb] aria-selected:text-primary" role="tab" id="icon-settings" aria-selected="false" aria-controls="icon-panel-settings" tabindex="-1"><i class="fa-solid fa-gear mr-2"></i>Settings</button></div></div>
+        <div class="p-5"><div role="tabpanel" id="icon-panel-overview" aria-labelledby="icon-overview" hidden>Overview content</div><div role="tabpanel" id="icon-panel-activity" aria-labelledby="icon-activity"><h3 class="font-semibold">Activity</h3><p class="mt-2 text-sm text-muted">Recent project activity and collaboration history appear here.</p></div><div role="tabpanel" id="icon-panel-tasks" aria-labelledby="icon-tasks" hidden>Task content</div><div role="tabpanel" id="icon-panel-files" aria-labelledby="icon-files" hidden>File content</div><div role="tabpanel" id="icon-panel-team" aria-labelledby="icon-team" hidden>Team content</div><div role="tabpanel" id="icon-panel-settings" aria-labelledby="icon-settings" hidden>Settings content</div></div>
+      </div>
+    </section>
+
+    <section class="doc-section" aria-labelledby="segmented-tabs">
+      <div class="section-heading"><p class="section-kicker">Pill variant</p><h2 id="segmented-tabs" class="section-title">Segmented tabs</h2><p class="section-copy">A compact segmented variant for switching between a small set of related views.</p></div>
+      <div class="demo-panel" data-tabs><div class="inline-flex rounded-[8px] bg-[#f1f5f9] p-1" role="tablist" aria-label="Compact views"><button class="min-h-8 rounded-[6px] px-4 text-sm text-muted aria-selected:bg-white aria-selected:font-semibold aria-selected:text-primary aria-selected:shadow-sm" role="tab" id="segment-overview" aria-selected="true" aria-controls="segment-panel-overview">Overview</button><button class="min-h-8 rounded-[6px] px-4 text-sm text-muted aria-selected:bg-white aria-selected:font-semibold aria-selected:text-primary aria-selected:shadow-sm" role="tab" id="segment-activity" aria-selected="false" aria-controls="segment-panel-activity" tabindex="-1">Activity</button><button class="min-h-8 rounded-[6px] px-4 text-sm text-muted aria-selected:bg-white aria-selected:font-semibold aria-selected:text-primary aria-selected:shadow-sm" role="tab" id="segment-files" aria-selected="false" aria-controls="segment-panel-files" tabindex="-1">Files</button></div><div class="sr-only"><div role="tabpanel" id="segment-panel-overview" aria-labelledby="segment-overview">Overview selected</div><div role="tabpanel" id="segment-panel-activity" aria-labelledby="segment-activity" hidden>Activity selected</div><div role="tabpanel" id="segment-panel-files" aria-labelledby="segment-files" hidden>Files selected</div></div></div>
+    </section>
+  </main>
+</body>
+</html>

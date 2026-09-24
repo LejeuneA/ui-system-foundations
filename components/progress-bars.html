@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Determinate progress indicators in multiple sizes and states.">
+  <title>Progress Bars - UI System Foundations</title>
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../assets/vendor/fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="../assets/css/tailwind.css">
+</head>
+<body>
+  <a class="sr-only-focusable" href="#main">Skip to content</a>
+  <header class="site-header"><div class="site-header__inner"><a class="brand-link" href="../index.html"><span class="brand-mark">UI</span><span>System Foundations</span></a><a class="header-link" href="../index.html"><i class="fa-solid fa-arrow-left"></i> Gallery</a></div></header>
+  <main id="main" class="page-shell">
+    <div class="page-hero"><p class="eyebrow">UI Pattern</p><h1 class="page-title">Progress Bars</h1><p class="page-lede">Visual indicators that communicate completion and progress across tasks and workflows.</p></div>
+    <section class="doc-section" aria-labelledby="progress-variants">
+      <div class="section-heading"><p class="section-kicker">Sizes &amp; states</p><h2 id="progress-variants" class="section-title">Progress variants</h2><p class="section-copy">Different visual weights and semantic states for determinate progress.</p></div>
+      <div class="demo-panel max-w-5xl space-y-9">
+        <div><div class="mb-2 flex justify-between text-sm"><span>Compact</span><span>40%</span></div><div class="h-1 overflow-hidden rounded-full bg-border" role="progressbar" aria-label="Compact progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="40"><div class="h-full rounded-full bg-primary" style="width:40%"></div></div></div>
+        <div><div class="mb-2 flex justify-between text-sm"><span>Standard</span><span>72%</span></div><div class="h-2 overflow-hidden rounded-full bg-border" role="progressbar" aria-label="Standard progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="72"><div class="h-full rounded-full bg-primary" style="width:72%"></div></div></div>
+        <div><div class="mb-2 flex justify-between text-sm"><span>Large</span><span>88%</span></div><div class="h-3 overflow-hidden rounded-full bg-border" role="progressbar" aria-label="Large progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="88"><div class="h-full rounded-full bg-primary" style="width:88%"></div></div></div>
+        <div><div class="mb-2 flex justify-between text-sm text-danger"><span>Error</span><span>25%</span></div><div class="h-2 overflow-hidden rounded-full bg-border" role="progressbar" aria-label="Progress stopped by an error" aria-valuemin="0" aria-valuemax="100" aria-valuenow="25" aria-invalid="true"><div class="h-full rounded-full bg-danger" style="width:25%"></div></div></div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

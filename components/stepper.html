@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Step indicators for multi-step workflows.">
+  <title>Stepper - UI System Foundations</title>
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../assets/vendor/fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="../assets/css/tailwind.css">
+</head>
+<body>
+  <a class="sr-only-focusable" href="#main">Skip to content</a>
+  <header class="site-header"><div class="site-header__inner"><a class="brand-link" href="../index.html"><span class="brand-mark">UI</span><span>System Foundations</span></a><a class="header-link" href="../index.html"><i class="fa-solid fa-arrow-left"></i> Gallery</a></div></header>
+  <main id="main" class="page-shell">
+    <div class="page-hero"><p class="eyebrow">UI Pattern</p><h1 class="page-title">Stepper</h1><p class="page-lede">Guides users through a multi-step flow while showing completed, current and upcoming stages.</p></div>
+    <section class="doc-section" aria-labelledby="step-states">
+      <div class="section-heading"><p class="section-kicker">States</p><h2 id="step-states" class="section-title">Step states</h2><p class="section-copy">Completed, current and upcoming states across a multi-step flow.</p></div>
+      <div class="demo-panel"><ol class="grid max-w-3xl grid-cols-[auto_1fr_auto_1fr_auto] items-center gap-3" aria-label="Project setup progress"><li class="flex items-center gap-3"><span class="grid size-9 place-items-center rounded-full bg-primary text-sm text-white"><i class="fa-solid fa-check"></i></span><span class="hidden text-sm font-semibold sm:block">Details</span><span class="sr-only">completed</span></li><li class="h-px bg-[#a6b1e1]"></li><li class="flex items-center gap-3" aria-current="step"><span class="grid size-9 place-items-center rounded-full border border-primary bg-[#f4eeff] text-sm font-semibold text-primary">2</span><span class="hidden text-sm font-semibold sm:block">Review</span></li><li class="h-px bg-border"></li><li class="flex items-center gap-3"><span class="grid size-9 place-items-center rounded-full border border-[#94a3b8] text-sm text-muted">3</span><span class="hidden text-sm text-muted sm:block">Complete</span></li></ol></div>
+    </section>
+    <section class="doc-section" aria-labelledby="mobile-stepper">
+      <div class="section-heading"><p class="section-kicker">Mobile</p><h2 id="mobile-stepper" class="section-title">Mobile stepper</h2><p class="section-copy">Compact icon-only navigation for narrow layouts.</p></div>
+      <div class="demo-panel"><ol class="grid max-w-sm grid-cols-[auto_1fr_auto_1fr_auto] items-center gap-3" aria-label="Compact project setup progress"><li><span class="grid size-9 place-items-center rounded-full bg-primary text-white"><i class="fa-solid fa-check"></i><span class="sr-only">Details completed</span></span></li><li class="h-px bg-[#a6b1e1]"></li><li><span class="grid size-9 place-items-center rounded-full border border-primary bg-[#f4eeff] text-sm font-semibold text-primary" aria-current="step">2<span class="sr-only">Review current</span></span></li><li class="h-px bg-border"></li><li><span class="grid size-9 place-items-center rounded-full border border-[#94a3b8] text-sm text-muted">3<span class="sr-only">Complete upcoming</span></span></li></ol></div>
+    </section>
+  </main>
+</body>
+</html>

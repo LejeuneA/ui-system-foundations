@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Action button variants, sizes, icon controls and navigation groups.">
+  <title>Action Buttons - UI System Foundations</title>
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../assets/vendor/fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="../assets/css/tailwind.css">
+  <script src="../assets/js/components.js" defer></script>
+</head>
+<body>
+  <a class="sr-only-focusable" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="brand-link" href="../index.html"><span class="brand-mark">UI</span><span>System Foundations</span></a>
+      <a class="header-link" href="../index.html"><i class="fa-solid fa-arrow-left" aria-hidden="true"></i> Gallery</a>
+    </div>
+  </header>
+  <main id="main" class="page-shell">
+    <div class="page-hero">
+      <p class="eyebrow">UI Pattern</p>
+      <h1 class="page-title">Action Buttons</h1>
+      <p class="page-lede">A flexible button system for actions, hierarchy, feedback and navigation.</p>
+    </div>
+
+    <section class="doc-section" aria-labelledby="button-colors">
+      <div class="section-heading"><p class="section-kicker">Color roles</p><h2 id="button-colors" class="section-title">Interaction colors</h2><p class="section-copy">Semantic colors used across default, hover, destructive and disabled states.</p></div>
+      <div class="demo-panel grid gap-8 sm:grid-cols-2 lg:grid-cols-5">
+        <div><h3 class="font-bold text-[#2b2f50]">Primary</h3><div class="mt-3 flex items-center gap-3"><span class="size-10 rounded-[8px] bg-primary"></span><span class="text-xs text-muted">Default<br>#424874</span></div><div class="mt-3 flex items-center gap-3"><span class="size-10 rounded-[8px] bg-primary-hover"></span><span class="text-xs text-muted">Hover<br>#363B61</span></div></div>
+        <div><h3 class="font-bold text-[#2b2f50]">Neutral</h3><div class="mt-3 flex items-center gap-3"><span class="size-10 rounded-[8px] bg-[#64748b]"></span><span class="text-xs text-muted">Border<br>#64748B</span></div><div class="mt-3 flex items-center gap-3"><span class="size-10 rounded-[8px] bg-[#475569]"></span><span class="text-xs text-muted">Text<br>#475569</span></div></div>
+        <div><h3 class="font-bold text-[#2b2f50]">Destructive</h3><div class="mt-3 flex items-center gap-3"><span class="size-10 rounded-[8px] bg-danger"></span><span class="text-xs text-muted">Default<br>#A74444</span></div><div class="mt-3 flex items-center gap-3"><span class="size-10 rounded-[8px] bg-[#8c3737]"></span><span class="text-xs text-muted">Hover<br>#8C3737</span></div></div>
+        <div><h3 class="font-bold text-[#2b2f50]">Disabled</h3><div class="mt-3 flex items-center gap-3"><span class="size-10 rounded-[8px] bg-[#f1f5f9]"></span><span class="text-xs text-muted">Surface<br>#F1F5F9</span></div><div class="mt-3 flex items-center gap-3"><span class="size-10 rounded-[8px] bg-[#e2e8f0]"></span><span class="text-xs text-muted">Border<br>#E2E8F0</span></div><div class="mt-3 flex items-center gap-3"><span class="size-10 rounded-[8px] bg-[#94a3b8]"></span><span class="text-xs text-muted">Text<br>#94A3B8</span></div></div>
+        <div><h3 class="font-bold text-[#2b2f50]">Focus</h3><div class="mt-3 flex items-center gap-3"><span class="size-10 rounded-[8px] bg-primary ring-4 ring-[rgba(66,72,116,0.2)]"></span><span class="text-xs text-muted">Ring<br>#424874</span></div></div>
+      </div>
+    </section>
+
+    <section class="doc-section" aria-labelledby="button-anatomy">
+      <div class="section-heading"><p class="section-kicker">Structure</p><h2 id="button-anatomy" class="section-title">Button anatomy</h2><p class="section-copy">Core dimensions and spacing shared across the button family.</p></div>
+      <div class="demo-panel grid items-center gap-8 md:grid-cols-[auto_1fr]">
+        <button class="btn btn-primary"><i class="fa-solid fa-plus" aria-hidden="true"></i>Create project</button>
+        <dl class="grid gap-2 text-sm text-muted sm:grid-cols-2"><div><dt class="font-semibold text-ink">Height</dt><dd>40px (md)</dd></div><div><dt class="font-semibold text-ink">Text</dt><dd>14px Manrope semibold</dd></div><div><dt class="font-semibold text-ink">Radius</dt><dd>8px</dd></div><div><dt class="font-semibold text-ink">Icon</dt><dd>16px</dd></div><div><dt class="font-semibold text-ink">Padding</dt><dd>16px inline</dd></div><div><dt class="font-semibold text-ink">Icon gap</dt><dd>8px</dd></div></dl>
+      </div>
+    </section>
+
+    <section class="doc-section" aria-labelledby="button-types">
+      <div class="section-heading"><p class="section-kicker">Button types</p><h2 id="button-types" class="section-title">Action hierarchy</h2><p class="section-copy">Variants defined by emphasis and interaction intent.</p></div>
+      <div class="demo-panel divide-y divide-border">
+        <div class="grid gap-5 py-5 first:pt-0 md:grid-cols-[minmax(0,1fr)_220px]"><div><h3 class="font-bold">Primary action</h3><p class="text-sm text-muted">Highest-priority action</p></div><div><button class="btn btn-primary"><i class="fa-solid fa-plus" aria-hidden="true"></i>Create project</button></div></div>
+        <div class="grid gap-5 py-5 md:grid-cols-[minmax(0,1fr)_220px]"><div><h3 class="font-bold">Secondary action</h3><p class="text-sm text-muted">Supporting action</p></div><div><button class="btn btn-secondary">Cancel</button></div></div>
+        <div class="grid gap-5 py-5 md:grid-cols-[minmax(0,1fr)_220px]"><div><h3 class="font-bold">Neutral action</h3><p class="text-sm text-muted">Optional or dismissive choices</p></div><div><button class="btn btn-neutral">Dismiss</button></div></div>
+        <div class="grid gap-5 py-5 md:grid-cols-[minmax(0,1fr)_220px]"><div><h3 class="font-bold">Text action</h3><p class="text-sm text-muted">Low-emphasis inline action</p></div><div><button class="btn btn-text">Learn more</button></div></div>
+        <div class="grid gap-5 py-5 md:grid-cols-[minmax(0,1fr)_220px]"><div><h3 class="font-bold">Inverse action</h3><p class="text-sm text-muted">For dark or high-contrast surfaces</p></div><div><button class="btn btn-inverse">View details</button></div></div>
+        <div class="grid gap-5 py-5 md:grid-cols-[minmax(0,1fr)_220px]"><div><h3 class="font-bold">Destructive action</h3><p class="text-sm text-muted">Irreversible or high-risk actions</p></div><div class="flex flex-wrap gap-3"><button class="btn btn-danger">Delete</button><button class="btn btn-danger-outline">Delete project</button></div></div>
+        <div class="grid gap-5 py-5 last:pb-0 md:grid-cols-[minmax(0,1fr)_220px]"><div><h3 class="font-bold">Disabled state</h3><p class="text-sm text-muted">Unavailable action</p></div><div><button class="btn btn-disabled" disabled>Unavailable</button></div></div>
+      </div>
+    </section>
+
+    <section class="doc-section" aria-labelledby="button-sizes">
+      <div class="section-heading"><p class="section-kicker">Dimensions</p><h2 id="button-sizes" class="section-title">Size scale</h2><p class="section-copy">Three control sizes for different interface densities.</p></div>
+      <div class="demo-panel demo-row"><button class="btn btn-sm btn-primary"><i class="fa-solid fa-plus" aria-hidden="true"></i>Compact</button><button class="btn btn-primary"><i class="fa-solid fa-plus" aria-hidden="true"></i>Standard</button><button class="btn btn-lg btn-primary"><i class="fa-solid fa-plus" aria-hidden="true"></i>Large</button></div>
+    </section>
+
+    <section class="doc-section" aria-labelledby="icon-buttons">
+      <div class="section-heading"><p class="section-kicker">Icon buttons</p><h2 id="icon-buttons" class="section-title">Icon-only buttons</h2><p class="section-copy">Compact controls for familiar actions, with accessible names supplied in markup.</p></div>
+      <div class="demo-panel space-y-6">
+        <div><h3 class="mb-3 font-bold">Styles</h3><div class="demo-row"><button class="icon-btn bg-primary text-white" aria-label="Add"><i class="fa-solid fa-plus"></i></button><button class="icon-btn border-primary text-primary" aria-label="Edit"><i class="fa-solid fa-pen"></i></button><button class="icon-btn border-[#64748b] text-[#475569]" aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i></button><button class="icon-btn border-danger text-danger" aria-label="Delete"><i class="fa-solid fa-trash-can"></i></button><button class="icon-btn border-border bg-[#f1f5f9] text-[#94a3b8]" aria-label="Share unavailable" disabled><i class="fa-solid fa-share-nodes"></i></button></div></div>
+        <div class="divider"></div>
+        <div><h3 class="mb-3 font-bold">Shape</h3><div class="demo-row"><button class="icon-btn icon-btn-round bg-primary text-white" aria-label="Add"><i class="fa-solid fa-plus"></i></button><button class="icon-btn icon-btn-round border-primary text-primary" aria-label="Confirm"><i class="fa-solid fa-check"></i></button><button class="icon-btn icon-btn-round border-[#64748b] text-[#475569]" aria-label="More options"><i class="fa-solid fa-ellipsis"></i></button><button class="icon-btn icon-btn-round border-danger text-danger" aria-label="Close"><i class="fa-solid fa-xmark"></i></button></div></div>
+        <div class="divider"></div>
+        <div><h3 class="mb-3 font-bold">Size scale</h3><div class="demo-row"><button class="icon-btn size-8 bg-primary text-xs text-white" aria-label="Add compact"><i class="fa-solid fa-plus"></i></button><button class="icon-btn bg-primary text-white" aria-label="Add standard"><i class="fa-solid fa-plus"></i></button><button class="icon-btn size-12 bg-primary text-base text-white" aria-label="Add large"><i class="fa-solid fa-plus"></i></button></div></div>
+      </div>
+    </section>
+
+    <section class="doc-section" aria-labelledby="action-groups">
+      <div class="section-heading"><p class="section-kicker">Action groups</p><h2 id="action-groups" class="section-title">Previous / Next actions</h2><p class="section-copy">Paired actions for guided forms, setup flows and multi-step tasks.</p></div>
+      <div class="demo-panel space-y-8">
+        <div><h3 class="font-bold">Footer layout</h3><p class="mb-4 text-sm text-muted">Actions aligned within a form or step footer.</p><div class="flex flex-wrap gap-3 rounded-[8px] bg-surface p-5"><button class="btn btn-secondary"><i class="fa-solid fa-angle-left"></i>Previous</button><button class="btn btn-primary">Next<i class="fa-solid fa-angle-right"></i></button></div></div>
+        <div class="divider"></div>
+        <div><h3 class="font-bold">Stacked layout</h3><p class="mb-4 text-sm text-muted">Alternative arrangement for narrow layouts.</p><div class="flex w-full max-w-40 flex-col gap-2"><button class="btn btn-secondary"><i class="fa-solid fa-angle-left"></i>Previous</button><button class="btn btn-primary">Next<i class="fa-solid fa-angle-right"></i></button></div></div>
+        <div class="divider"></div>
+        <div><h3 class="font-bold">Boundary states</h3><p class="mb-4 text-sm text-muted">Unavailable navigation at the beginning or end of a flow.</p><div class="demo-row"><button class="btn btn-disabled" disabled><i class="fa-solid fa-angle-left"></i>Previous</button><button class="btn btn-primary"><i class="fa-solid fa-check"></i>Finish</button></div></div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

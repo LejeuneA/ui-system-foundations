@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Standard and truncated breadcrumb navigation.">
+  <title>Breadcrumbs - UI System Foundations</title>
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../assets/vendor/fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="../assets/css/tailwind.css">
+</head>
+<body>
+  <a class="sr-only-focusable" href="#main">Skip to content</a>
+  <header class="site-header"><div class="site-header__inner"><a class="brand-link" href="../index.html"><span class="brand-mark">UI</span><span>System Foundations</span></a><a class="header-link" href="../index.html"><i class="fa-solid fa-arrow-left"></i> Gallery</a></div></header>
+  <main id="main" class="page-shell">
+    <div class="page-hero"><p class="eyebrow">UI Pattern</p><h1 class="page-title">Breadcrumbs</h1><p class="page-lede">Interactive links show the navigation path, while the current page remains non-clickable.</p></div>
+    <section class="doc-section" aria-labelledby="standard-trail">
+      <div class="section-heading"><p class="section-kicker">Default</p><h2 id="standard-trail" class="section-title">Standard trail</h2><p class="section-copy">Home entry, chevron separators and a clearly distinguished current page.</p></div>
+      <div class="demo-panel"><nav aria-label="Breadcrumb"><ol class="flex flex-wrap items-center gap-2 text-sm"><li><a class="text-primary hover:text-primary-hover" href="#" aria-label="Home"><i class="fa-solid fa-house"></i></a></li><li class="text-[#94a3b8]" aria-hidden="true"><i class="fa-solid fa-angle-right"></i></li><li><a class="text-primary hover:text-primary-hover" href="#">Projects</a></li><li class="text-[#94a3b8]" aria-hidden="true"><i class="fa-solid fa-angle-right"></i></li><li><a class="text-primary hover:text-primary-hover" href="#">Website redesign</a></li><li class="text-[#94a3b8]" aria-hidden="true"><i class="fa-solid fa-angle-right"></i></li><li class="font-semibold text-ink" aria-current="page">Overview</li></ol></nav></div>
+    </section>
+    <section class="doc-section" aria-labelledby="deep-paths">
+      <div class="section-heading"><p class="section-kicker">Deep paths</p><h2 id="deep-paths" class="section-title">Truncated &amp; back-link</h2><p class="section-copy">Long navigation paths collapse in the middle, with an optional back link for focused flows.</p></div>
+      <div class="demo-panel space-y-5"><nav aria-label="Breadcrumb"><ol class="flex flex-wrap items-center gap-2 text-sm"><li><a class="text-primary" href="#" aria-label="Home"><i class="fa-solid fa-house"></i></a></li><li class="text-[#94a3b8]"><i class="fa-solid fa-angle-right"></i></li><li><a class="text-primary" href="#">Projects</a></li><li class="text-[#94a3b8]"><i class="fa-solid fa-angle-right"></i></li><li><button class="icon-btn size-8 border-0 text-primary" aria-label="Show hidden breadcrumb items"><i class="fa-solid fa-ellipsis"></i></button></li><li class="text-[#94a3b8]"><i class="fa-solid fa-angle-right"></i></li><li><a class="max-w-40 truncate text-primary" href="#">Website redesign</a></li><li class="text-[#94a3b8]"><i class="fa-solid fa-angle-right"></i></li><li class="font-semibold" aria-current="page">Settings</li></ol></nav><a class="inline-flex min-h-10 items-center gap-2 text-sm font-semibold text-primary" href="#"><i class="fa-solid fa-arrow-left"></i>Back to projects</a></div>
+    </section>
+  </main>
+</body>
+</html>

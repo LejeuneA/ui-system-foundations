@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Contextual messages and semantic feedback states.">
+  <title>Alerts &amp; Callouts - UI System Foundations</title>
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../assets/vendor/fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="../assets/css/tailwind.css">
+  <script src="../assets/js/components.js" defer></script>
+</head>
+<body>
+  <a class="sr-only-focusable" href="#main">Skip to content</a>
+  <header class="site-header"><div class="site-header__inner"><a class="brand-link" href="../index.html"><span class="brand-mark">UI</span><span>System Foundations</span></a><a class="header-link" href="../index.html"><i class="fa-solid fa-arrow-left"></i> Gallery</a></div></header>
+  <main id="main" class="page-shell">
+    <div class="page-hero"><p class="eyebrow">UI Pattern</p><h1 class="page-title">Alerts &amp; Callouts</h1><p class="page-lede">Contextual messages for guidance, feedback and important system updates.</p></div>
+
+    <section class="doc-section" aria-labelledby="contextual-note">
+      <div class="section-heading"><p class="section-kicker">Informational</p><h2 id="contextual-note" class="section-title">Contextual note</h2><p class="section-copy">Low-emphasis guidance for supporting information.</p></div>
+      <div class="demo-panel"><aside class="max-w-3xl rounded-[8px] border border-border border-l-4 border-l-[#64748b] bg-surface px-4 py-3 text-sm text-[#475569]">Project settings can be updated at any time. Changes will apply to future activity without affecting completed work.</aside></div>
+    </section>
+
+    <section class="doc-section" aria-labelledby="feedback-states">
+      <div class="section-heading"><p class="section-kicker">Semantic alerts</p><h2 id="feedback-states" class="section-title">Feedback states</h2><p class="section-copy">Color-coded messages communicate information, success, warnings and errors.</p></div>
+      <div class="demo-panel max-w-5xl space-y-4">
+        <div class="alert alert-info" role="status"><i class="fa-regular fa-circle-question mt-0.5" aria-hidden="true"></i><div class="min-w-0 flex-1"><p class="font-semibold">New feature available</p><p class="mt-1 text-xs sm:text-sm">A new workspace view is available. You can enable it from your project settings.</p></div><button class="-m-2 grid size-10 shrink-0 place-items-center rounded-[8px]" data-dismiss-alert aria-label="Dismiss new feature alert"><i class="fa-solid fa-xmark"></i></button></div>
+        <div class="alert alert-success" role="status"><i class="fa-regular fa-circle-check mt-0.5" aria-hidden="true"></i><div class="min-w-0 flex-1"><p class="font-semibold">Project created</p><p class="mt-1 text-xs sm:text-sm">Your project has been created successfully and is ready for your team.</p></div><button class="-m-2 grid size-10 shrink-0 place-items-center rounded-[8px]" data-dismiss-alert aria-label="Dismiss project created alert"><i class="fa-solid fa-xmark"></i></button></div>
+        <div class="alert alert-warning" role="status"><i class="fa-regular fa-clock mt-0.5" aria-hidden="true"></i><div class="min-w-0 flex-1"><p class="font-semibold">Deadline approaching</p><p class="mt-1 text-xs sm:text-sm">This task is due soon. Review the remaining work before the deadline.</p></div><button class="-m-2 grid size-10 shrink-0 place-items-center rounded-[8px]" data-dismiss-alert aria-label="Dismiss deadline alert"><i class="fa-solid fa-xmark"></i></button></div>
+        <div class="alert alert-danger" role="alert"><i class="fa-regular fa-circle-xmark mt-0.5" aria-hidden="true"></i><div class="min-w-0 flex-1"><p class="font-semibold">Upload failed</p><p class="mt-1 text-xs sm:text-sm">Your file could not be uploaded. Check the file format or try again.</p></div><button class="-m-2 grid size-10 shrink-0 place-items-center rounded-[8px]" data-dismiss-alert aria-label="Dismiss upload error"><i class="fa-solid fa-xmark"></i></button></div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

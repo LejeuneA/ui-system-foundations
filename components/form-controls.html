@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Text inputs, selection fields and choice controls.">
+  <title>Form Controls - UI System Foundations</title>
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../assets/vendor/fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="../assets/css/tailwind.css">
+  <script src="../assets/js/components.js" defer></script>
+</head>
+<body>
+  <a class="sr-only-focusable" href="#main">Skip to content</a>
+  <header class="site-header"><div class="site-header__inner"><a class="brand-link" href="../index.html"><span class="brand-mark">UI</span><span>System Foundations</span></a><a class="header-link" href="../index.html"><i class="fa-solid fa-arrow-left"></i> Gallery</a></div></header>
+  <main id="main" class="page-shell">
+    <div class="page-hero"><p class="eyebrow">UI Pattern</p><h1 class="page-title">Form Controls</h1><p class="page-lede">Text inputs, selection fields and choice controls with validation, focus and disabled states.</p></div>
+
+    <section class="doc-section" aria-labelledby="input-states">
+      <div class="section-heading"><p class="section-kicker">Text inputs</p><h2 id="input-states" class="section-title">Input states</h2><p class="section-copy">Common field states for default, focus, validation and locked inputs.</p></div>
+      <div class="demo-panel grid gap-8 md:grid-cols-2">
+        <div><label class="field-label" for="project-name">Project name</label><input class="field-control" id="project-name" placeholder="e.g. Website redesign"><span class="field-help">Used to identify this project across the workspace.</span></div>
+        <div><label class="field-label" for="contact-email">Contact email</label><div class="relative"><input class="field-control pr-10" id="contact-email" type="email" value="name@example.com"><i class="fa-solid fa-check absolute right-3 top-3 text-[#3c552d]" aria-hidden="true"></i></div><span class="field-help text-[#3c552d]">Email verified</span></div>
+        <div><label class="field-label" for="website-url">Website URL <span class="text-xs font-normal text-muted">- focus</span></label><input class="field-control border-primary ring-2 ring-[rgba(66,72,116,0.2)]" id="website-url" type="url" value="https://example.com"><span class="field-help">Include https://</span></div>
+        <div><label class="field-label" for="project-code">Project code <span class="text-xs font-normal text-danger">- error</span></label><div class="relative"><input class="field-control field-error pr-10" id="project-code" value="PRJ-001" aria-invalid="true" aria-describedby="project-code-error"><i class="fa-solid fa-circle-exclamation absolute right-3 top-3 text-danger" aria-hidden="true"></i></div><span id="project-code-error" class="field-help text-danger">Project code must use the format PRJ-000.</span></div>
+        <div><label class="field-label" for="workspace-id">Workspace ID <span class="text-xs font-normal text-muted">- locked</span></label><div class="relative"><input class="field-control field-locked pr-10" id="workspace-id" value="WS-2048-A" readonly><i class="fa-solid fa-lock absolute right-3 top-3 text-muted" aria-hidden="true"></i></div><span class="field-help">Cannot be edited</span></div>
+        <div><label class="field-label" for="start-date">Start date</label><input class="field-control" id="start-date" type="date"></div>
+      </div>
+    </section>
+
+    <section class="doc-section" aria-labelledby="long-form">
+      <div class="section-heading"><p class="section-kicker">Textarea &amp; select</p><h2 id="long-form" class="section-title">Long-form &amp; selection inputs</h2><p class="section-copy">Controls for extended text and predefined option selection.</p></div>
+      <div class="demo-panel grid gap-8 md:grid-cols-2">
+        <div><label class="field-label" for="project-description">Project description</label><textarea class="field-control min-h-28 resize-y py-3" id="project-description" maxlength="500"></textarea><span class="field-help">Maximum 500 characters</span></div>
+        <div><label class="field-label" for="project-type">Project type</label><select class="field-control" id="project-type"><option>Client project</option><option>Internal project</option><option>Research project</option></select><span class="field-help">Used to organize projects and reporting.</span></div>
+      </div>
+    </section>
+
+    <section class="doc-section" aria-labelledby="choice-controls">
+      <div class="section-heading"><p class="section-kicker">Choice controls</p><h2 id="choice-controls" class="section-title">Checkbox, radio &amp; toggle</h2><p class="section-copy">Controls for independent selections, single-choice options and binary settings.</p></div>
+      <div class="demo-panel grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
+        <fieldset><legend class="mb-4 text-xs font-semibold uppercase text-[#7f8fd0] tracking-[0.2em]">Checkbox</legend><div class="space-y-3"><label class="flex items-center gap-3 text-sm"><input class="size-4 rounded accent-[#424874]" type="checkbox" checked>Enable email notifications</label><label class="flex items-center gap-3 text-sm"><input class="size-4 rounded accent-[#424874]" type="checkbox">Send weekly summary</label><label class="flex items-center gap-3 text-sm"><input class="size-4 rounded accent-[#424874]" type="checkbox" checked>Notify project owner</label></div></fieldset>
+        <fieldset><legend class="mb-4 text-xs font-semibold uppercase text-[#7f8fd0] tracking-[0.2em]">Radio</legend><div class="space-y-3"><label class="flex items-center gap-3 text-sm"><input class="size-4 accent-[#424874]" type="radio" name="visibility" checked>Private</label><label class="flex items-center gap-3 text-sm"><input class="size-4 accent-[#424874]" type="radio" name="visibility">Team only</label><label class="flex items-center gap-3 text-sm"><input class="size-4 accent-[#424874]" type="radio" name="visibility">Public</label></div></fieldset>
+        <fieldset><legend class="mb-4 text-xs font-semibold uppercase text-[#7f8fd0] tracking-[0.2em]">Toggle</legend><div class="space-y-4"><label class="flex items-center gap-3 text-sm"><span class="relative inline-flex h-6 w-11 items-center"><input class="peer sr-only" type="checkbox" checked><span class="absolute inset-0 rounded-full bg-[#cbd5e1] transition peer-checked:bg-primary"></span><span class="absolute left-1 size-4 rounded-full bg-white transition peer-checked:translate-x-5"></span></span>Enable comments</label><label class="flex items-center gap-3 text-sm"><span class="relative inline-flex h-6 w-11 items-center"><input class="peer sr-only" type="checkbox"><span class="absolute inset-0 rounded-full bg-[#cbd5e1] transition peer-checked:bg-primary"></span><span class="absolute left-1 size-4 rounded-full bg-white transition peer-checked:translate-x-5"></span></span>Allow file uploads</label></div></fieldset>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

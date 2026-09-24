@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Numbered pagination and data table footer navigation.">
+  <title>Pagination - UI System Foundations</title>
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../assets/vendor/fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="../assets/css/tailwind.css">
+  <script src="../assets/js/components.js" defer></script>
+</head>
+<body>
+  <a class="sr-only-focusable" href="#main">Skip to content</a>
+  <header class="site-header"><div class="site-header__inner"><a class="brand-link" href="../index.html"><span class="brand-mark">UI</span><span>System Foundations</span></a><a class="header-link" href="../index.html"><i class="fa-solid fa-arrow-left"></i> Gallery</a></div></header>
+  <main id="main" class="page-shell">
+    <div class="page-hero"><p class="eyebrow">UI Pattern</p><h1 class="page-title">Pagination</h1><p class="page-lede">Navigation controls for moving through long lists, results and data sets.</p></div>
+    <section class="doc-section" aria-labelledby="numbered-pagination">
+      <div class="section-heading"><p class="section-kicker">Default</p><h2 id="numbered-pagination" class="section-title">Numbered pagination</h2><p class="section-copy">The current page is highlighted while long ranges collapse into an ellipsis.</p></div>
+      <div class="demo-panel flex flex-col gap-5 sm:flex-row sm:items-center sm:justify-between" data-pagination data-current-page="5" data-total-pages="22" data-page-size="10" data-total-items="250">
+        <p class="text-sm text-muted" data-pagination-status aria-live="polite">41-50 of 250 items</p>
+        <nav aria-label="Results pages"><ul class="flex flex-wrap items-center gap-1" data-pagination-pages></ul></nav>
+      </div>
+    </section>
+    <section class="doc-section" aria-labelledby="table-pagination">
+      <div class="section-heading"><p class="section-kicker">Table footer</p><h2 id="table-pagination" class="section-title">Rows per page &amp; navigation</h2><p class="section-copy">A compact pagination variant designed for data table footers.</p></div>
+      <div class="demo-panel flex flex-col gap-5 sm:flex-row sm:items-center sm:justify-between" data-pagination data-current-page="3" data-page-size="10" data-total-items="250">
+        <label class="flex items-center gap-3 text-sm text-muted">Rows per page<select class="field-control w-20" aria-label="Rows per page" data-pagination-size><option>10</option><option>25</option><option>50</option></select></label>
+        <div class="flex flex-wrap items-center gap-3 text-sm text-muted">
+          <span data-pagination-status aria-live="polite">21-30 of 250 items</span>
+          <button class="pagination-btn" type="button" data-pagination-step="-1" aria-label="Previous page"><i class="fa-solid fa-angle-left"></i></button>
+          <span data-pagination-page-status>Page 3 of 25</span>
+          <button class="pagination-btn" type="button" data-pagination-step="1" aria-label="Next page"><i class="fa-solid fa-angle-right"></i></button>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Grouped and standalone accordion patterns.">
+  <title>Accordion - UI System Foundations</title>
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../assets/vendor/fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="../assets/css/tailwind.css">
+</head>
+<body>
+  <a class="sr-only-focusable" href="#main">Skip to content</a>
+  <header class="site-header"><div class="site-header__inner"><a class="brand-link" href="../index.html"><span class="brand-mark">UI</span><span>System Foundations</span></a><a class="header-link" href="../index.html"><i class="fa-solid fa-arrow-left"></i> Gallery</a></div></header>
+  <main id="main" class="page-shell">
+    <div class="page-hero"><p class="eyebrow">UI Pattern</p><h1 class="page-title">Accordion</h1><p class="page-lede">Collapsible sections for organizing detailed content while keeping interfaces compact and easy to scan.</p></div>
+    <section class="doc-section" aria-labelledby="bordered-list">
+      <div class="section-heading"><p class="section-kicker">Grouped</p><h2 id="bordered-list" class="section-title">Bordered list</h2><p class="section-copy">Multiple accordion rows share a single container for compact content groups.</p></div>
+      <div class="overflow-hidden rounded-[8px] border border-border bg-white divide-y divide-border">
+        <details class="group transition-colors open:bg-surface" open><summary class="flex min-h-14 list-none items-center justify-between gap-4 px-4 font-semibold"><span>How do I create a new project?</span><i class="fa-solid fa-angle-down text-[#94a3b8] transition group-open:rotate-180 group-open:text-primary"></i></summary><p class="px-4 pb-4 text-sm leading-6 text-muted">Open the Projects area, select New project, add the required details and confirm to create the workspace.</p></details>
+        <details class="group transition-colors open:bg-surface"><summary class="flex min-h-14 list-none items-center justify-between gap-4 px-4 font-semibold"><span>Can I archive or restore a project?</span><i class="fa-solid fa-angle-down text-[#94a3b8] transition group-open:rotate-180 group-open:text-primary"></i></summary><p class="px-4 pb-4 text-sm leading-6 text-muted">Archived projects remain available to authorized team members and can be restored when needed.</p></details>
+        <details class="group transition-colors open:bg-surface"><summary class="flex min-h-14 list-none items-center justify-between gap-4 px-4 font-semibold"><span>How do team permissions work?</span><i class="fa-solid fa-angle-down text-[#94a3b8] transition group-open:rotate-180 group-open:text-primary"></i></summary><p class="px-4 pb-4 text-sm leading-6 text-muted">Permissions determine which projects and actions are available to each role.</p></details>
+        <details class="group transition-colors open:bg-surface"><summary class="flex min-h-14 list-none items-center justify-between gap-4 px-4 font-semibold"><span>Where can I find uploaded files?</span><i class="fa-solid fa-angle-down text-[#94a3b8] transition group-open:rotate-180 group-open:text-primary"></i></summary><p class="px-4 pb-4 text-sm leading-6 text-muted">Files are available from the Files section inside each project.</p></details>
+      </div>
+    </section>
+    <section class="doc-section" aria-labelledby="separated-cards">
+      <div class="section-heading"><p class="section-kicker">Standalone</p><h2 id="separated-cards" class="section-title">Separated cards</h2><p class="section-copy">Each item appears as an individual card with optional supporting icons, metadata and counts.</p></div>
+      <div class="space-y-3">
+        <details class="group rounded-[8px] border border-border bg-white transition-colors open:bg-surface" open><summary class="flex min-h-16 list-none items-center gap-4 px-4"><span class="grid size-9 shrink-0 place-items-center rounded-full bg-[#f1f5f9] text-[#64748b] transition-colors group-open:bg-[#f4eeff] group-open:text-primary"><i class="fa-solid fa-gear"></i></span><span class="min-w-0 flex-1"><strong class="block">Workspace details</strong><span class="text-xs text-muted">Team, visibility, activity</span></span><i class="fa-solid fa-angle-down text-[#94a3b8] transition group-open:rotate-180 group-open:text-primary"></i></summary><p class="border-t border-border px-4 py-4 pl-[4.25rem] text-sm leading-6 text-muted">Review workspace settings, team access and recent activity for this project.</p></details>
+        <details class="group rounded-[8px] border border-border bg-white transition-colors open:bg-surface"><summary class="flex min-h-16 list-none items-center gap-4 px-4"><span class="grid size-9 shrink-0 place-items-center rounded-full bg-[#f1f5f9] text-[#64748b] transition-colors group-open:bg-[#f4eeff] group-open:text-primary"><i class="fa-solid fa-list-check"></i></span><span class="min-w-0 flex-1"><strong class="block">Project tasks</strong><span class="text-xs text-muted">4 tasks</span></span><i class="fa-solid fa-angle-down text-[#94a3b8] transition group-open:rotate-180 group-open:text-primary"></i></summary><p class="border-t border-border px-4 py-4 pl-[4.25rem] text-sm text-muted">Review open and completed work.</p></details>
+        <details class="group rounded-[8px] border border-border bg-white transition-colors open:bg-surface"><summary class="flex min-h-16 list-none items-center gap-4 px-4"><span class="grid size-9 shrink-0 place-items-center rounded-full bg-[#f1f5f9] text-[#64748b] transition-colors group-open:bg-[#f4eeff] group-open:text-primary"><i class="fa-regular fa-folder"></i></span><span class="min-w-0 flex-1"><strong class="block">Project files</strong><span class="text-xs text-muted">3 files</span></span><i class="fa-solid fa-angle-down text-[#94a3b8] transition group-open:rotate-180 group-open:text-primary"></i></summary><p class="border-t border-border px-4 py-4 pl-[4.25rem] text-sm text-muted">Review files shared with the project.</p></details>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
